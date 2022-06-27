@@ -1,8 +1,6 @@
 // Desafio 1
-
 function compareTrue(macaco, elefante) {
-  let macaco = true;
-  let elefante = true;
+  
   if (macaco && elefante === true){
     return true
   } else {
@@ -21,20 +19,28 @@ function splitSentence(texto) {
 }
 
 // Desafio 4
-function concatName(array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
-  for (let index = 0; index < array.length; index++) {
-    return index[0], index.length -1;
-  }
+function concatName(array) {
+  let lastName = array[array.length - 1] + ', ' + array[0];
+  return lastName;
 }
 
 // Desafio 5
 function footballPoints() {
-  // seu código aqui
+  const wins = 3;
+  const ties = 1;
+
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numeros) {
+  let maiorNumero = 0;
+  for (maiorNumero of numeros) {
+    if(Math.max.apply(null, numeros)){
+    maiorNumero++;
+  }
+  }
+  
+  return maiorNumero;
 }
 
 // Desafio 7
