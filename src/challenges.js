@@ -1,6 +1,5 @@
 // Desafio 1
 function compareTrue(macaco, elefante) {
-  
   if (macaco && elefante === true){
     return true
   } else {
@@ -25,22 +24,13 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  const wins = 3;
-  const ties = 1;
-
+function footballPoints(wins, ties) {
+  return (wins * 3) + (ties *1);
 }
 
 // Desafio 6
 function highestCount(numeros) {
-  let maiorNumero = 0;
-  for (maiorNumero of numeros) {
-    if(Math.max.apply(null, numeros)){
-    maiorNumero++;
-  }
-  }
   
-  return maiorNumero;
 }
 
 // Desafio 7
