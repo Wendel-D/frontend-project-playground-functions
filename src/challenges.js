@@ -1,19 +1,19 @@
 // Desafio 1
-macaco = true;
-elefante = false;
-function compareTrue(macaco,elefante) {
-  if(macaco && elefante === true){
+
+function compareTrue(macaco, elefante) {
+  let macaco = true;
+  let elefante = true;
+  if (macaco && elefante === true){
     return true
-  }else{
+  } else {
     return false;
   }
 }
 
 // Desafio 2
-function calcArea(base,altura) {
-  return base * altura / 2;
+function calcArea(base, altura) {
+  return (base * altura) / 2;
 }
-console.log(calcArea(10,50));
 // Desafio 3
 function splitSentence(texto) {
   let arrayNomes = texto.split(' ');
