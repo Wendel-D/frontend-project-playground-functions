@@ -21,8 +21,10 @@ function splitSentence(texto) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
+  for (let index = 0; index < array.length; index++) {
+    return index[0], index.length -1;
+  }
 }
 
 // Desafio 5
