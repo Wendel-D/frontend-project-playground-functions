@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(macaco, elefante) {
-  if (macaco && elefante === true){ 
+  if (macaco && elefante === true) {
     return true
   } else {
     return false;
@@ -25,50 +25,44 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins * 3) + (ties *1);
+  return (wins * 3) + (ties * 1);
 }
 
 // Desafio 6
 function highestCount(numeros) {
-  // let maiorNumero;
+  let maiorNumero = numeros[0];
+  for (let index2 = 0; index2 < numeros.length; index2++) {
+    if (maiorNumero < numeros[index2]) {
+      maiorNumero = numeros[index2];
+    }
+  }
   let contador = 0;
-  // for (let i = 0; i < numeros.length; i++) {
-  //   maiorNumero = numeros[i];
-  //   for (let j = 0; j < numeros.length; j++) {
-  //      if (maiorNumero > numeros[j]){
-  //         contador ++;
-  //      }
-  //   }
-  // }
-  // return contador;
-
-
+  for (let i = 0; i < numeros.length; i++) {
+    if (maiorNumero === numeros[i]) {
+      contador += 1;
+    }
+  }
+  return contador;
 }
-console.log(highestCount([1,1,9]));
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if(mouse  - cat1  < mouse  - cat2 ){
+  if (mouse - cat1 < mouse - cat2) {
     return ("cat2")
-  }if(mouse  - cat1  > mouse  - cat2){
+  } if (mouse - cat1 > mouse - cat2) {
     return ("cat1")
-  }else{
+  } else {
     return ('os gatos trombam e o rato foge')
   }
 }
-  console.log(catAndMouse(1, 2, 2));
+console.log(catAndMouse(1, 0, 0));
 // Desafio 8
-function fizzBuzz(array) {
-  let parametro = [];
-  for (const parametro of array) {
-    if (array % 3 === 0) {
-      
-    }
-  }
+function fizzBuzz() {
+
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+
 }
 function decode() {
   // seu código aqui
