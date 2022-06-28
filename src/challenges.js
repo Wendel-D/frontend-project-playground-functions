@@ -84,11 +84,17 @@ function fizzBuzz(numeros) {
 
 // Desafio 9
 function encode(frase) {
-  
+  for (let i = 0; i < frase.length; i++) {
+      frase = frase.replace('a', '1').replace('e', '2').replace('i', '3').replace('o', '4').replace('u', '5');
+  }
+  return frase;
 }
-function decode() {
-  // seu código aqui
-}
+function decode(frase) {
+  for (let i = 0; i < frase.length; i++) {
+    frase = frase.replace('1', 'a').replace('2', 'e').replace('3', 'i').replace('4', 'o').replace('5', 'u');
+  }
+    return frase;
+  }
 
 // Desafio 10
 function techList(tech, name) {
