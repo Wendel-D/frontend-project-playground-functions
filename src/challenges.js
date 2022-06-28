@@ -51,23 +51,36 @@ function catAndMouse(mouse, cat1, cat2) {
   distancia = mouse - cat1;
   distancia2 = mouse - cat2;
   if (distancia < 0) {
-   distancia = distancia * -1;
-  } 
-   if (distancia2 < 0) {
+    distancia = distancia * -1;
+  }
+  if (distancia2 < 0) {
     distancia2 = distancia2 * -1;
-  }if(distancia < distancia2) {
+  } if (distancia < distancia2) {
     return 'cat1';
-  }else if( distancia2 < distancia){
+  } else if (distancia2 < distancia) {
     return 'cat2';
-  }else{
+  } else {
     return 'os gatos trombam e o rato foge'
   }
 }
 console.log(catAndMouse(1, 3, 2));
 // Desafio 8
-function fizzBuzz() {
-
+function fizzBuzz(numeros) {
+  let value = [];
+  for (let index = 0; index < numeros.length; index++) {
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      value.push('fizzBuzz');
+    } else if (numeros[index] % 5 === 0) {
+      value.push('buzz') ;
+    } else if (numeros[index] % 3 === 0 ) {
+      value.push('fizz');
+    } else {
+      value.push('bug!');
+    }
+  }
+  return value;
 }
+
 
 // Desafio 9
 function encode(frase) {
