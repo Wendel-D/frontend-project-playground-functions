@@ -84,17 +84,25 @@ function fizzBuzz(numeros) {
 
 // Desafio 9
 function encode(frase) {
-
+  
 }
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  tech.sort();
+  let resultado = [];
+  if(tech.length === 0){
+    return 'Vazio!';
+  }
+  for (let i = 0; i < tech.length; i++) {
+    resultado.push({tech: tech[i], name: name});
+  }
+  return resultado;
 }
-
+console.log(techList(["js", "html"], 'roger'));
 module.exports = {
   calcArea,
   catAndMouse,
