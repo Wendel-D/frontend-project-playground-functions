@@ -122,3 +122,5 @@ module.exports = {
   splitSentence,
   techList,
 };
+
+// teste
